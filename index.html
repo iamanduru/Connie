@@ -1,13 +1,442 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conylader Wawira Muriithi</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo animate__animated animate__fadeInLeft">
+                <div class="logo-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item animate__animated animate__fadeInDown animate__delay-1s">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item animate__animated animate__fadeInDown animate__delay-2s">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav-item animate__animated animate__fadeInDown animate__delay-3s">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="nav-item animate__animated animate__fadeInDown animate__delay-4s">
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item animate__animated animate__fadeInDown animate__delay-5s">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="nav-item animate__animated animate__fadeInDown animate__delay-6s">
+                    <a href="#contact" class="nav-cta">Book Session</a>
+                </li>
+            </ul>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate__animated animate__fadeInUp">
+                    <i class="fas fa-award"></i>
+                    Professional Therapist
+                </div>
+                
+                <h1 class="hero-title animate__animated animate__fadeInUp animate__delay-1s">
+                    Be seen. Be heard.
+                    <span class="hero-gradient-text">Be whole.</span>
+                </h1>
+                
+                <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-2s">
+                    Experience personalized therapy that honors your unique journey toward mental wellness and emotional freedom.
+                </p>
+                
+                <p class="hero-description animate__animated animate__fadeInUp animate__delay-3s">
+                    Life doesn’t always make sense—and that’s okay. Whether you're navigating anxiety, identity, relationships, or simply feeling stuck, you don’t have to do it alone. I'm here to support your journey with compassionate, affirming, and personalized therapy that meets you where you are. Let's turn your challenges into growth—and your survival into thriving.
+                </p>
+                
+                <div class="cta-buttons animate__animated animate__fadeInUp animate__delay-4s">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Schedule Free Consultation
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-user-md"></i>
+                        Learn About My Approach
+                    </a>
+                </div>
+                
+                <div class="trust-indicators animate__animated animate__fadeInUp animate__delay-5s">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt trust-icon"></i>
+                        <span>Confidential & Secure</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-clock trust-icon"></i>
+                        <span>Flexible Scheduling</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-video trust-icon"></i>
+                        <span>In-Person & Online</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual animate__animated animate__fadeInRight animate__delay-2s">
+                <div class="floating-elements">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="card-title">Growth That Feels Like You</div>
+                        <div class="card-text">Your space to grow through anxiety, identity, or life goals with clarity and confidence, at your own pace.</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-title">Real Support. No Judgment.</div>
+                        <div class="card-text">Come as you are. This is a safe, affirming space for anyone ready for change. You’re not alone.</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator animate__animated animate__fadeInUp animate__delay-6s">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div style="font-size: 0.875rem; font-weight: 500;">Discover More</div>
+        </div>
+    </section>
+
+    <section class="about__section" id="about">
+        <div class="floating__elements">
+            <div class="floating__circle circle__1"></div>
+            <div class="floating__circle circle__2"></div>
+            <div class="floating__circle circle__3"></div>
+        </div>
+
+        <div class="about__container">
+            <header class="about__header animate__animated animate__fadeInDown">
+                <h1 class="about__title">About Connie</h1>
+                <p class="about__subtitle">A space where healing begins and real change unfolds.</p>
+            </header>
+
+            <div class="about__content">
+                <div class="profile__section slide_in_left">
+                    <div class="profile__placeholder">
+                        <div class="profile__image">
+                            <img src="./profile.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__text slide_in_right">
+                    <p>I’m a psychologist with a passion for<span class="about__highlight"> helping people untangle their thoughts,</span> manage stress, and live fuller lives. Let’s be honest,life can get messy. One day you’re on top of things, the next you’re spiraling at 2 AM wondering if your thoughts will ever slow down. That’s where I come in.</p>
+                    
+                    <p>With over <span class="about__highlight"> 1½ years of clinical experience</span>, and a strong focus on creating safe, inclusive spaces, especially for LGBTQIA+ individuals, I offer compassionate, affirming therapy that meets you exactly where you are.</p>
+                    
+                    <p>Whether you’re feeling stuck, navigating anxiety, or working through relationship challenges, I provide evidence-based support using tools like CBT, mindfulness, and trauma-informed care to guide your journey. You can show up exactly as you are <span class="about__highlight">, no judgment, no pressure.</span> Just real conversations, real support, and the space to grow at your own pace.</p>
+                </div>
+            </div>
+
+            <div class="specialties__section fade_in">
+                <h2 class="specialties__title">What We Can Work On Together</h2>
+                <div class="specialties__grid">
+                    <div class="specialty__card">
+                        <div class="specialty__icon">🌀</div>
+                        <h3 class="specialty__title">Anxiety & Overthinking</h3>
+                        <p class="specialty__description">Learn how to manage your mind before it runs the show.</p>
+                    </div>
+                    <div class="specialty__card">
+                        <div class="specialty__icon">🫶</div>
+                        <h3 class="specialty__title">Identity & Self-Acceptance</h3>
+                        <p class="specialty__description">Especially for LGBTQIA+ individuals—explore who you are in a safe, affirming space.</p>
+                    </div>
+                    <div class="specialty__card">
+                        <div class="specialty__icon">🌱</div>
+                        <h3 class="specialty__title">Personal Growth</h3>
+                        <p class="specialty__description">Break free from self-sabotage and build the confidence to move forward.</p>
+                    </div>
+                    <div class="specialty__card">
+                        <div class="specialty__icon">💬</div>
+                        <h3 class="specialty__title"> Relationships & Boundaries</h3>
+                        <p class="specialty__description">Build healthier connections, with others and with yourself.</p>
+                    </div>
+                    <div class="specialty__card">
+                        <div class="specialty__icon">✨</div>
+                        <h3 class="specialty__title">Life Transitions & Emotional Wellness</h3>
+                        <p class="specialty__description">Navigate change with support and find your grounding again.</p>
+                    </div>
+                    <div class="specialty__card">
+                        <div class="specialty__icon">🧠</div>
+                        <h3 class="specialty__title">Stress & Burnout Recovery</h3>
+                        <p class="specialty__description">Reclaim your energy, set limits, and build balance in a world that never slows down.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta__section fade_in">
+                <h2 class="cta__title">Ready to Begin?</h2>
+                <p class="cta__text">The first step is hard—but you’re not alone. Let’s turn “just surviving” into thriving—together.</p>
+                <a href="#contact" class="cta__button">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services__section" id="services">
+        <div class="service__floating__elements">
+            <div class="service__floating-circle"></div>
+            <div class="service__floating-circle"></div>
+            <div class="service__floating-circle"></div>
+        </div>
+
+        <div class="service__container">
+            <div class="service__header">
+                <h2 class="services__title">Therapy Packages</h2>
+                <p class="service__subtitle">Comprehensive therapy packages designed to provide structured support and measurable progress on your healing journey</p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__icon">🧠</div>
+                    <h3 class="service__title">Harmony Individual Package</h3>
+                    <p class="service__description">A comprehensive individual therapy package designed to support your personal healing journey with consistent care and diverse therapeutic approaches.</p>
+                    <ul class="service__features">
+                        <li>8 Individual Therapy Sessions (50 minutes each)</li>
+                        <li>Initial Assessment & Goal Setting Session</li>
+                        <li>Personalized Treatment Plan Development</li>
+                        <li>Between-session check-in messages</li>
+                        <li>Coping strategies workbook & resources</li>
+                        <li>Progress tracking & milestone celebrations</li>
+                    </ul>
+                    <button class="service__cta">Choose Package</button>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">💕</div>
+                    <h3 class="service__title">Connection Couples Package</h3>
+                    <p class="service__description">Strengthen your relationship foundation with a structured couples therapy program that builds communication skills and emotional intimacy.</p>
+                    <ul class="service__features">
+                        <li>6 Couples Therapy Sessions (75 minutes each)</li>
+                        <li>Relationship Assessment & Strengths Analysis</li>
+                        <li>Communication Skills Workshop</li>
+                        <li>At-home relationship exercises</li>
+                        <li>Conflict resolution toolkit</li>
+                        <li>Monthly relationship check-in calls</li>
+                    </ul>
+                    <button class="service__cta">Choose Package</button>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="service__title">Unity Family Package</h3>
+                    <p class="service__description">Create lasting positive change in your family dynamics through comprehensive family therapy sessions and specialized support tools.</p>
+                    <ul class="service__features">
+                        <li>6 Family Therapy Sessions (90 minutes each)</li>
+                        <li>Individual parent consultation sessions</li>
+                        <li>Teen/child individual sessions (as needed)</li>
+                        <li>Family communication workshop</li>
+                        <li>Parenting strategies guide</li>
+                        <li>Crisis support hotline access</li>
+                    </ul>
+                    <button class="service__cta">Choose Package</button>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">🌱</div>
+                    <h3 class="service__title">Mindful Living Package</h3>
+                    <p class="service__description">Transform your relationship with stress and cultivate inner peace through mindfulness-based therapy and wellness practices.</p>
+                    <ul class="service__features">
+                        <li>5 Mindfulness-Based Therapy Sessions</li>
+                        <li>Guided meditation audio library</li>
+                        <li>Stress management workshop</li>
+                        <li>Daily mindfulness practice plan</li>
+                        <li>Wellness journal & tracking tools</li>
+                        <li>Monthly wellness check-in calls</li>
+                    </ul>
+                    <button class="service__cta">Choose Package</button>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">🏳️‍🌈</div>
+                    <h3 class="service__title">Authentic Self Package</h3>
+                    <p class="service__description">Affirming therapy for LGBTQIA+ individuals navigating identity, self-acceptance, or personal transitions.</p>
+                    <ul class="service__features">
+                        <li>6 Individual Therapy Sessions (50 minutes each)</li>
+                        <li>Safe Space for Identity Exploration</li>
+                        <li>Affirmative Practice Tools</li>
+                        <li>Goal Mapping for Personal Empowerment</li>
+                        <li>LGBTQIA+ Wellness Resources</li>
+                        <li>Optional Family or Partner Session</li>
+                    </ul>
+                    <button class="service__cta">Choose Package</button>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">🌟</div>
+                    <h3 class="service__title">Thrive Starter Package (Budget-Friendly & Flexible)</h3>
+                    <p class="service__description">Perfect for those just starting out or needing flexible, low-commitment support with room to grow.</p>
+                    <ul class="service__features">
+                        <li>4 Individual Therapy Sessions (50 minutes each)</li>
+                        <li>Short-Term Goal Setting</li>
+                        <li>Resource Starter Pack (CBT tools, grounding exercises)/li>
+                        <li>Optional Sliding Scale Pricing                        </li>
+                        <li>Wellness journal & tracking tools</li>
+                        <li>Open Pathway to Continued Therapy</li>
+                    </ul>
+                    <button class="service__cta">Choose Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonial__section">
+        <div class="testimonial__title animate__animated animate__fadeInDown">
+            <h2>What my Clients Say</h2>
+            <p>Discover why my clients trust me.</p>
+        </div>
+
+        <div class="testimonials__grid">
+            <div class="testimonial__card animate__animated animate__fadeInUp" data-delay="0.2s">
+                <div class="testimonial__content">
+                    <div class="quote__icon">"</div>
+                    <p class="testimonial__text">
+                        "I came in stuck in my career, life, everything. Connie didn’t just listen, she really saw me. Her guidance helped me reconnect with myself and move forward with purpose. She’s the real deal."
+                    </p>
+                </div>
+                <div class="testimonial__author">
+                    <div class="author__avatar">K</div>
+                    <div class="author__info">
+                        <h4>Kevin</h4>
+                        <p>~</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial__card animate__animated animate__fadeInUp" data-delay="0.4s">
+                <div class="testimonial__content">
+                    <div class="quote__icon">"</div>
+                    <p class="testimonial__text">
+                        "Honestly, I thought therapy was just talking about my feelings and crying—but turns out, she actually helped me stop spiraling at 2 AM. 10/10, would recommend before Googling life advice again!!"
+                    </p>
+                </div>
+                <div class="testimonial__author">
+                    <div class="author__avatar">AM</div>
+                    <div class="author__info">
+                        <h4>Anduru M.</h4>
+                        <p>Founder, Mpower Corp</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial__card animate__animated animate__fadeInUp" data-delay="0.6s">
+                <div class="testimonial__content">
+                    <div class="quote__icon">"</div>
+                    <p class="testimonial__text">
+                        "Therapy with Connie felt like finally exhaling after holding my breath for years. She helped me make sense of the chaos in my head without ever making me feel judged. I’m clearer, calmer, and finally feel like myself again"
+                    </p>
+                </div>
+                <div class="testimonial__author">
+                    <div class="author__avatar">AO</div>
+                    <div class="author__info">
+                        <h4>Achieng O.</h4>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact__title">
+            <h2>Get In Touch</h2>
+            <p>Ready to start your next project? Let's create something amazing together</p>
+        </div>
+        <div class="contact__container">
+            <div class="contact__info">
+                <h3>Let's Connect</h3>
+                <p>We're here to help bring your ideas to life. Reach out through any of these channels and let's start the conversation.</p>
+               
+                <div class="contact__methods">
+                    <div class="contact-method">
+                        <svg class="method-icon" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>conniemuriithi068@gmail.com</span>
+                    </div>
+                   
+                    <div class="contact-method">
+                        <svg class="method-icon" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <span>+254 787 982266</span>
+                    </div>
+                   
+                    <div class="contact-method">
+                        <svg class="method-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span>Kenya</span>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="success-message" id="successMessage">
+                    Message sent successfully! We'll get back to you soon.
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g Connie Wawira" required>
+                </div>
+               
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+               
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+                </div>
+               
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                </div>
+               
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
 </html>
+
+ 
